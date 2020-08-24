@@ -20,7 +20,7 @@ public class Supplier {
 	@OneToMany(mappedBy = "supplier")
 	private Set<Item> item;
 	
-	public Set<Item> getItems(){
+	public Set<Item> getItems() {
 		return item;
 	}
 	
@@ -62,7 +62,7 @@ public class Supplier {
 		if(o == null || !(o instanceof Supplier)) {
 			return false;
 		}
-		Supplier that = (Supplier)o;
+		Supplier that = (Supplier o);
 		boolean isequals = this.id == that.id;
 		return isequals;
 		

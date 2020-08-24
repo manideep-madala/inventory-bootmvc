@@ -13,6 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.dxctraining.inventorymgt.supplier.entities.Supplier;
 import com.dxctraining.inventorymgt.supplier.service.ISupplierService;
 
+
 @Controller
 public class SupplierController {
 	
@@ -41,7 +42,7 @@ public class SupplierController {
 	@GetMapping("/supplierlist")
 	public ModelAndView allSuppliers() {
 		List<Supplier>listAll = service.listAll();
-		ModelAndView modelAndView = new ModelAndView("list","suppliers",listAll);
+		ModelAndView modelAndView = new ModelAndView("list","suppliers", listAll);
 		return modelAndView;
 		
 	}

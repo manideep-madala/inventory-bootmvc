@@ -11,6 +11,7 @@ import com.dxctraining.inventorymgt.supplier.entities.Supplier;
 import com.dxctraining.inventorymgt.supplier.exceptions.InvalidSupplierArgumentException;
 import com.dxctraining.inventorymgt.supplier.exceptions.SupplierNullException;
 
+
 @Transactional
 @Service
 public class SupplierServiceImpl implements ISupplierService {
@@ -65,6 +66,7 @@ public class SupplierServiceImpl implements ISupplierService {
 	public List<Supplier> listAll() {
 		List<Supplier>listAll= dao.listAll();
 		return listAll;
+
 	}
 	
 }
