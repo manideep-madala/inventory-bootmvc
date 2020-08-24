@@ -34,6 +34,7 @@ public class Computer  extends Item {
 	public void setDiscSize(int discSize) {
 		this.discSize = discSize;
 	}
+
 	
 }
 
